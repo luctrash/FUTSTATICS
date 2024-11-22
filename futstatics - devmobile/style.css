@@ -1,0 +1,139 @@
+:root {
+    --azul-escuro: #003366;
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza);
+    color: var(--preto);
+    line-height: 1.6;
+    padding: 15px;
+}
+
+header {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 10px 0;
+}
+
+#players-list, #games-list {
+    background-color: var(--branco);
+    border: 1px solid var(--azul-escuro);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: var(--cinza);
+    border: 1px solid var(--azul-escuro);
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+li:hover {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+li span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+li button {
+    margin-left: 10px;
+    background-color: #cc0000;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+li button:hover {
+    background-color: #990000;
+}
+
+li button:active {
+    transform: scale(0.95);
+}
+
+.add-button {
+    display: inline-block;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.add-button:hover {
+    background-color: var(--preto);
+}
+
+#add-player-game {
+    background-color: var(--branco);
+    border: 1px solid var(--azul-escuro);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: var(--preto);
+}
+
+a {
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
